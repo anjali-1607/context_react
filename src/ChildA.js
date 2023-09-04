@@ -1,15 +1,8 @@
 import React from "react";
 
 import { FirstName } from "./App";
+import ChildB from "./ChildB";
 
 export default function ChildA() {
-  return (
-    <div>
-      <FirstName.Consumer>
-        {(fname) => {
-          return <h1>Myself {fname}</h1>;
-        }}{" "}
-      </FirstName.Consumer>
-    </div>
-  );
+  return <ChildB />;
 }

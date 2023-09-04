@@ -1,14 +1,12 @@
-import React from "react";
-import { Firstname } from "./App";
+import React, { useContext } from "react";
+import ChildC from "./ChildC";
+import { FirstName } from "./App";
 
 export default function ChildB() {
+  const fname = useContext(FirstName);
   return (
     <>
-      {/* <Firstname.Consumer>
-        {(fname) => {
-          return <h1>Myself {fname}</h1>;
-        }}{" "}
-      </Firstname.Consumer> */}
+      <h1>My name is {fname}</h1>
     </>
   );
 }
